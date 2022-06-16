@@ -116,31 +116,103 @@
 // 5
 
 
-btn.onclick=function corner(){
+// btn.onclick=function corner(){
 
-   switch(sel.value){
+//    switch(sel.value){
 
-    case "top-left":
-div1.style=" height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
+//     case "top-left":
+// div1.style=" height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
 
-break;
+// break;
 
-case "top-right":
-    div1.style="float:right; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
+// case "top-right":
+//     div1.style="float:right; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
     
-    break;
+//     break;
 
-    case "buttom-left":
-        div1.style="margin-top:61vh; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
+//     case "buttom-left":
+//         div1.style="margin-top:61vh; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
         
-        break;
+//         break;
 
-        case "buttom-right":
-    div1.style="float:right;margin-top:61vh; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
+//         case "buttom-right":
+//     div1.style="float:right;margin-top:61vh; height:100px;width:100px;border-radius:50%; border: solid black 1px; background:"+color1.value
     
-    break;
+//     break;
     
-   }
+//    }
    
    
+// }
+
+
+//מערך של אובייקטים שצריך לבדוק ר=אם הגיל שלו מעל 18 ט=ולהדפיס
+
+// let person={
+//     name:"avi",
+//     lastname:"brok",
+//     age:50
+// }
+
+// let person1={
+//     name:"gggg",
+//     lastname:"fffff",
+//     age:26
+// }
+
+// let person2={
+//     name:"moti",
+//     lastname:"brok",
+//     age:12,
+// }
+
+// let myarray=[person,person2,person1]
+
+
+// function personFuncc(personArray){
+
+//     personArray.forEach( (personArray)=> {
+//         if(personArray.age>18){
+//             dive1.innerText+=" "+personArray.name+" "+personArray.lastname
+//         }
+//         else
+//         dive2.innerText+=personArray.name
+
+//     });
+
+
+// }
+
+// personFuncc(myarray);
+
+// for (const i of myarray) {
+//     console.log()
+// }
+
+
+
+var elements=document.getElementsByClassName("ele");
+
+for (const i of elements) {
+    console.log(i)
+}
+
+
+var elementp=document.getElementsByClassName("texts");
+
+
+
+
+btn1.onclick=()=>{
+    for(const i of elementp){
+
+        i.style.color="blue"
+        }
+}
+
+btn2.onclick=()=>{
+    for(const i of elementp){
+
+        i.innerText="hello"
+        }
 }
